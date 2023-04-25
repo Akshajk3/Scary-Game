@@ -11,6 +11,14 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     SpriteRenderer spriteRenderer;
 
+    [Header("Attack Combo")]
+    public float comboTime = 0.1f;
+
+    [HideInInspector]
+    public bool attacking;
+
+    int attackCombo;
+
     Vector2 movement;
     
     void Start()
@@ -43,12 +51,15 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Mouse0))
         {
-            anim.SetInteger("IsAttacking", 0);
-            //Invoke("ResetAnimation", 20);
+            attackCombo += 1;
+            anim.SetInteger("AttackCombo", attackCombo);
+            anim.SetBool("IsAttacking", true);
+            Invoke("ResetAnimation", 0.2f);
         }
-        if(Input.GetKeyDown(KeyCode.Mouse1))
+
+        if(Input.GetKeyUp(KeyCode.Mouse0))
         {
-            anim.SetInteger("IsAttacking", -1);
+            Invoke("ResetAttackCombo", comboTime);
         }
     }
 
@@ -58,8 +69,13 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    void ResetAnimation(string animName)
+    void ResetAnimation()
     {
         anim.SetBool("IsAttacking", false);
+    }
+
+    void ResetAttackCombo()
+    {
+        attackCombo = 0;
     }
 }

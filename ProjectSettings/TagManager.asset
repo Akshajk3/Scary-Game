@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3319490139
+    locked: 0
+  - name: Walls
+    uniqueID: 69657263
+    locked: 0
+  - name: Decoration
+    uniqueID: 1869288317
+    locked: 0
+  - name: Props
+    uniqueID: 1315775727
+    locked: 0
+  - name: Enemies
+    uniqueID: 3534932159
+    locked: 0
+  - name: Player
+    uniqueID: 1611049351
+    locked: 0

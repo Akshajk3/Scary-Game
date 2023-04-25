@@ -59,6 +59,9 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Sprites\Super_Retro_World_Interior_pack_week42\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
