@@ -78,4 +78,12 @@ public class PlayerMovement : MonoBehaviour
     {
         attackCombo = 0;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "enemy")
+        {
+
+        }
+    }
 }
