@@ -5,13 +5,21 @@ using UnityEngine.Events;
 
 public class Attack : MonoBehaviour
 {
-    public UnityEvent attackEvent;
+    public TrashMonster trashMonster;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            attackEvent.Invoke();
+            trashMonster.canAttack = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            trashMonster.canAttack = false;
         }
     }
 }

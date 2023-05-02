@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     SpriteRenderer spriteRenderer;
 
+    public int health = 3;
+
     [Header("Attack Combo")]
     public float comboTime = 0.1f;
 
@@ -74,15 +76,17 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("IsAttacking", false);
     }
 
-    void ResetAttackCombo()
+    void TakeDamage(int damage)
     {
-        attackCombo = 0;
+        health -= damage;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        TrashMonster trashMonster = collision.gameObject.GetComponent<TrashMonster>();
         if(collision.gameObject.tag == "enemy")
         {
+            TakeDamage(trashMonster.damage);
 
         }
     }

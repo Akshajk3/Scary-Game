@@ -13,9 +13,13 @@ public class TrashMonster : MonoBehaviour
     public AIPath aiPath;
     public SpriteRenderer spriteRenderer;
 
+    public bool canAttack = false;
+
+    public int health = 3;
+
     [SerializeField] private float attackCooldown;
-    [SerializeField] private int damage;
-    private float cooldownTimer = Mathf.Infinity;
+    [SerializeField] public int damage;
+    [HideInInspector] public float cooldownTimer = Mathf.Infinity;
 
     void Start()
     {
@@ -37,11 +41,16 @@ public class TrashMonster : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         }
+
+        if (canAttack == true)
+        {
+            Attack();
+        }
     }
 
     public void Attack()
     {
-        if(cooldownTimer <= attackCooldown)
+        if(cooldownTimer >= attackCooldown)
         {
             cooldownTimer = 0;
             anim.SetTrigger("Attack");
