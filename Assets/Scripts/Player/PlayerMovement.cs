@@ -6,12 +6,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Movement")]
     public float moveSpeed = 5;
     public Rigidbody2D rb;
     public Animator anim;
+
     SpriteRenderer spriteRenderer;
 
     public int health = 3;
+
+    [Header("Attacking")]
+    public int damage;
 
     [Header("Attack Combo")]
     public float comboTime = 0.1f;
@@ -22,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     int attackCombo;
 
     Vector2 movement;
+
+    TrashMonster enemy;
     
     void Start()
     {

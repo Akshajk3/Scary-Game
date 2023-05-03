@@ -56,9 +56,11 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemies\Attack.cs" />
-    <Compile Include="Assets\Scripts\Enemies\TrashMonster.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Trash Monster\Attack.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Trash Monster\TrashMonster.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Trash Monster\Sleep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sprites\Super_Retro_World_Interior_pack_week42\README.txt" />
