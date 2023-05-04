@@ -58,8 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemies\Trash Monster\Attack.cs" />
     <Compile Include="Assets\Scripts\Enemies\Trash Monster\TrashMonster.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Enemies\Trash Monster\Sleep.cs" />
   </ItemGroup>
   <ItemGroup>

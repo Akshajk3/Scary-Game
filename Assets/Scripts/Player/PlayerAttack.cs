@@ -17,8 +17,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Enemy"))
         {
-            TrashMonster monster = collision.gameObject.GetComponent<TrashMonster>();
-            monster.TakeDamage(damage);
+            collision.gameObject.GetComponent<TrashMonster>().TakeDamage(damage);
         }
     }
 }

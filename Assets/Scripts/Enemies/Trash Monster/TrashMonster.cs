@@ -17,7 +17,10 @@ public class TrashMonster : MonoBehaviour
 
     [Header("Health")]
     public int health = 3;
+
+    [Header("Death")]
     public bool dead = false;
+    public GameObject deadMonster;
 
     [Header("Attack")]
     public bool canAttack = false;
@@ -36,6 +39,7 @@ public class TrashMonster : MonoBehaviour
     {
         sleeping = true;
         canMove = false;
+        dead = false;
         AnimatorClipInfo[] myAnimatorClip = anim.GetCurrentAnimatorClipInfo(0);
     }
 
@@ -59,6 +63,12 @@ public class TrashMonster : MonoBehaviour
         {
             Attack();
         }
+
+        if(dead == true)
+        {
+            Instantiate(deadMonster, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
 
     public void Attack()
@@ -73,14 +83,7 @@ public class TrashMonster : MonoBehaviour
     public void Die()
     { 
         anim.SetTrigger("Dead");
-        if (dead == true)
-        {
-            canMove = false;
-            foreach (Behaviour component in components)
-            {
-                component.enabled = false;
-            }
-        }
+        canMove = false;
     }
 
     public void TakeDamage(int damage)

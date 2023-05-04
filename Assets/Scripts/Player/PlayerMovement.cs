@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5;
     public Rigidbody2D rb;
     public Animator anim;
+    public float scale = 6;
 
     SpriteRenderer spriteRenderer;
 
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         spriteRenderer= GetComponent<SpriteRenderer>();
+        gameObject.transform.localScale = new Vector2(scale, scale);
     }
 
     void Update()
@@ -42,11 +44,11 @@ public class PlayerMovement : MonoBehaviour
 
         if(movement.x < 0)
         {
-            spriteRenderer.flipX = true;
+            gameObject.transform.localScale = new Vector2(-scale, transform.localScale.y);
         }
         else if(movement.x > 0)
         {
-            spriteRenderer.flipX = false;
+            gameObject.transform.localScale = new Vector2(scale, transform.localScale.y);
         }
 
         if(movement != new Vector2(0, 0))
