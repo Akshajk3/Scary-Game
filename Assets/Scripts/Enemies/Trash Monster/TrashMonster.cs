@@ -13,6 +13,7 @@ public class TrashMonster : MonoBehaviour
     public Animator anim;
     public AIPath aiPath;
     public SpriteRenderer spriteRenderer;
+    public float moveSpeed = 3f;
 
 
     [Header("Health")]
@@ -20,7 +21,6 @@ public class TrashMonster : MonoBehaviour
 
     [Header("Death")]
     public bool dead = false;
-    public GameObject deadMonster;
 
     [Header("Attack")]
     public bool canAttack = false;
@@ -37,10 +37,13 @@ public class TrashMonster : MonoBehaviour
 
     void Start()
     {
+        aiPath.maxSpeed = moveSpeed;
         sleeping = true;
         canMove = false;
         dead = false;
         AnimatorClipInfo[] myAnimatorClip = anim.GetCurrentAnimatorClipInfo(0);
+        attackCooldownTimer = attackCooldown;
+        damageCooldownTimer = damageCooldown;
     }
 
     void Update()
@@ -64,9 +67,8 @@ public class TrashMonster : MonoBehaviour
             Attack();
         }
 
-        if(dead == true)
+        if (dead == true)
         {
-            Instantiate(deadMonster, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
