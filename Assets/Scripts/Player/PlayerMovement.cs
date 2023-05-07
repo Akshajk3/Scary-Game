@@ -22,10 +22,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float invincibilityTime = 1f;
     [HideInInspector] public float invincibilityTimer = Mathf.Infinity;
 
-    [Header("Attacking")]
+    [Header("Combat")]
     public int damage;
-    [SerializeField] private float attackCooldownTime = 1f;
-    [HideInInspector] public float attackCooldownTimer = Mathf.Infinity;
+
 
     [Header("Attack Combo")]
     public float comboTime = 0.1f;
@@ -46,13 +45,11 @@ public class PlayerMovement : MonoBehaviour
         death = false;
         canMove = true;
         invincibilityTimer = invincibilityTime;
-        attackCooldownTimer = attackCooldownTime;
     }
 
     void Update()
     {
         invincibilityTimer += Time.deltaTime;
-        attackCooldownTimer += Time.deltaTime;
 
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -75,16 +72,6 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("IsRunning", false);
         }
 
-        if(Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            Attack();
-        }
-
-        if(Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            Invoke("ResetAttackCombo", comboTime);
-        }
-
         if(death == true)
         {
             anim.enabled = false;
@@ -99,11 +86,6 @@ public class PlayerMovement : MonoBehaviour
             movement = movement.normalized;
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         }
-    }
-
-    void Attack()
-    {
-        anim.SetTrigger("Attack");
     }
 
     void TakeDamage(int damage)

@@ -386,7 +386,12 @@
 "Assets/Scripts/Enemies/Trash Monster/Attack.cs"
 "Assets/Scripts/Enemies/Trash Monster/Sleep.cs"
 "Assets/Scripts/Enemies/Trash Monster/TrashMonster.cs"
-"Assets/Scripts/Player/PlayerAttack.cs"
+"Assets/Scripts/Player/Animation/AttackThreeBehaviour.cs"
+"Assets/Scripts/Player/Animation/IdleBehaviour.cs"
+"Assets/Scripts/Player/Animation/TransitionOneBehaviour.cs"
+"Assets/Scripts/Player/Animation/TransitionTwoBehaviour.cs"
+"Assets/Scripts/Player/Combat/CombatManager.cs"
+"Assets/Scripts/Player/Combat/PlayerAttack.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 -langversion:9.0
 
