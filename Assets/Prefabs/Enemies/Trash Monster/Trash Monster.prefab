@@ -315,11 +315,13 @@ MonoBehaviour:
   health: 10
   dead: 0
   canAttack: 0
-  attackCooldown: 2
-  damageCooldown: 1
+  attackCooldown: 1
+  damageCooldown: 0.2
+  stunCooldown: 0.7
   damage: 1
   attackCooldownTimer: Infinity
   damageCooldownTimer: Infinity
+  stunCooldownTimer: Infinity
   components:
   - {fileID: 4960696381536490401}
   - {fileID: 4960696381536490406}

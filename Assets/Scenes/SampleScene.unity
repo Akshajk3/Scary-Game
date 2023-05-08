@@ -251,16 +251,12 @@ MonoBehaviour:
   rb: {fileID: 26323741}
   anim: {fileID: 26323739}
   scale: 5.5
-  canMove: 1
+  canMove: 0
   health: 3
   death: 0
   invincibilityTime: 1
   invincibilityTimer: 0
   damage: 1
-  attackCooldownTime: 1
-  attackCooldownTimer: Infinity
-  canRecieveInput: 0
-  inputRecieved: 0
   comboTime: 0.1
   attacking: 0
 --- !u!50 &26323741
@@ -5016,8 +5012,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4960696381536490401, guid: fe378f6da148b3b4c91f16d5a416e3cc, type: 3}
-      propertyPath: damageCooldown
-      value: 0.1
+      propertyPath: components.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4960696381536490408, guid: fe378f6da148b3b4c91f16d5a416e3cc, type: 3}
       propertyPath: m_Name

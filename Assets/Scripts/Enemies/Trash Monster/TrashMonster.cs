@@ -26,9 +26,11 @@ public class TrashMonster : MonoBehaviour
     public bool canAttack = false;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float damageCooldown;
+    [SerializeField] private float stunCooldown;
     [SerializeField] public int damage;
     [HideInInspector] public float attackCooldownTimer = Mathf.Infinity;
     [HideInInspector] public float damageCooldownTimer = Mathf.Infinity;
+    [HideInInspector] public float stunCooldownTimer = Mathf.Infinity;
 
     [Header("Components")]
     [SerializeField] private Behaviour[] components;
@@ -44,12 +46,14 @@ public class TrashMonster : MonoBehaviour
         AnimatorClipInfo[] myAnimatorClip = anim.GetCurrentAnimatorClipInfo(0);
         attackCooldownTimer = attackCooldown;
         damageCooldownTimer = damageCooldown;
+        stunCooldownTimer = stunCooldown;
     }
 
     void Update()
     {
         attackCooldownTimer += Time.deltaTime;
         damageCooldownTimer += Time.deltaTime;
+        stunCooldownTimer += Time.deltaTime;
         aiPath.canMove = canMove;
         anim.SetBool("IsSleeping", sleeping);
 
@@ -86,6 +90,10 @@ public class TrashMonster : MonoBehaviour
     { 
         anim.SetTrigger("Dead");
         canMove = false;
+        foreach(Component component in components)
+        {
+            component.gameObject.SetActive(false);
+        }
     }
 
     public void TakeDamage(int damage)
@@ -93,7 +101,12 @@ public class TrashMonster : MonoBehaviour
         if(damageCooldownTimer >= damageCooldown)
         {
             damageCooldownTimer = 0;
-            anim.SetTrigger("Damage");
+            if(stunCooldownTimer >= stunCooldown)
+            {
+                stunCooldownTimer = 0;
+                anim.SetTrigger("Damage");
+            }
+
             health -= damage;
             if(health <= 0)
             {
