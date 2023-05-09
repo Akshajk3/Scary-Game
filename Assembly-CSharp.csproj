@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Enemies\Trash Monster\Sleep.cs" />
     <Compile Include="Assets\Scripts\Player\Animation\TransitionOneBehaviour.cs" />
     <Compile Include="Assets\Scripts\Player\Animation\IdleBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Player\Combat\PlayerStunAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Sprites\Super_Retro_World_Interior_pack_week42\README.txt" />

@@ -392,6 +392,7 @@
 "Assets/Scripts/Player/Animation/TransitionTwoBehaviour.cs"
 "Assets/Scripts/Player/Combat/CombatManager.cs"
 "Assets/Scripts/Player/Combat/PlayerAttack.cs"
+"Assets/Scripts/Player/Combat/PlayerStunAttack.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
 -langversion:9.0
 

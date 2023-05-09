@@ -101,14 +101,23 @@ public class TrashMonster : MonoBehaviour
         if(damageCooldownTimer >= damageCooldown)
         {
             damageCooldownTimer = 0;
-            if(stunCooldownTimer >= stunCooldown)
-            {
-                stunCooldownTimer = 0;
-                anim.SetTrigger("Damage");
-            }
-
             health -= damage;
             if(health <= 0)
+            {
+                Die();
+            }
+        }
+    }
+
+    public void TakeStunDamage(int damage)
+    {
+        if (damageCooldownTimer >= damageCooldown)
+        {
+            damageCooldownTimer = 0;
+            anim.SetTrigger("Damage");
+
+            health -= damage;
+            if (health <= 0)
             {
                 Die();
             }
