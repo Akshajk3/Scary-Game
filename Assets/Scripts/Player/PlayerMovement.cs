@@ -14,6 +14,12 @@ public class PlayerMovement : MonoBehaviour
     public float scale = 6;
     public bool canMove = true;
 
+    [Header("Dodge")]
+    private bool canDodge = true;
+    private bool isDodging;
+    private float dodgingPower;
+
+
     SpriteRenderer spriteRenderer;
 
     [Header("Health")]
@@ -76,6 +82,11 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.enabled = false;
             Invoke("ResetGame", 5f);
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetTrigger("Dodge");
         }
     }
 
