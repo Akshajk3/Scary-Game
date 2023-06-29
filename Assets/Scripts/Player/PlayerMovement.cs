@@ -15,9 +15,11 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
 
     [Header("Dodge")]
-    private bool canDodge = true;
-    private bool isDodging;
-    private float dodgingPower;
+    [SerializeField] float dashPower = 10f;
+    [SerializeField] float dashTime = 1f;
+    [SerializeField] float dashCooldown = 1f;
+    bool isDashing = false;
+    bool canDash;
 
 
     SpriteRenderer spriteRenderer;
@@ -35,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Attack Combo")]
     public float comboTime = 0.1f;
 
+    [Header("Spawn")]
+    public Transform spawnLocation;
+
     [HideInInspector]
     public bool attacking;
 
@@ -50,11 +55,18 @@ public class PlayerMovement : MonoBehaviour
         gameObject.transform.localScale = new Vector2(scale, scale);
         death = false;
         canMove = true;
+        canDash = true;
         invincibilityTimer = invincibilityTime;
+        gameObject.transform.position = spawnLocation.position;
     }
 
     void Update()
     {
+        if(isDashing)
+        {
+            return;
+        }
+
         invincibilityTimer += Time.deltaTime;
 
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -84,19 +96,37 @@ public class PlayerMovement : MonoBehaviour
             Invoke("ResetGame", 5f);
         }
 
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && canDash)
         {
-            anim.SetTrigger("Dodge");
+            StartCoroutine(Dash());
         }
     }
 
     void FixedUpdate()
     {
+        if(isDashing)
+        {
+            return;
+        }
+
         if (canMove == true)
         {
             movement = movement.normalized;
             rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
         }
+    }
+
+    IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        anim.SetTrigger("Dodge");
+        rb.velocity = new Vector2(movement.x * dashPower, movement.y * dashPower);
+        yield return new WaitForSeconds(dashTime);
+        isDashing = false;
+
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     void TakeDamage(int damage)

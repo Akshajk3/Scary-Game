@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{4D613BBF-9E8F-EE9B-7F22-A23F0407EA98}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="60" Column="63" />
+      <File FileName="Assets/Scripts/Enemies/Trash Monster/TrashMonster.cs" Line="71" Column="41" />
+      <File FileName="Assets/Scripts/Enemies/Trash Monster/Sleep.cs" Line="21" Column="72" />
+      <File FileName="Assets/Scripts/Enemies/Trash Monster/Attack.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/World Items/Load Zone.cs" Line="13" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Scary-Game" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="AstarPathfindingProject" expanded="True">
+                <Node name="Editor" expanded="True" />
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="Enemies" expanded="True">
+                  <Node name="Trash Monster" expanded="True" />
+                </Node>
+                <Node name="Player" expanded="True" />
+                <Node name="World Items" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="54278c65-d34c-4ff4-819c-4186e3efa973" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

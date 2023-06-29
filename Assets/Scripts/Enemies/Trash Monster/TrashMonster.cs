@@ -13,6 +13,7 @@ public class TrashMonster : MonoBehaviour
     public Animator anim;
     public AIPath aiPath;
     public SpriteRenderer spriteRenderer;
+    public AIDestinationSetter aiDestinationSetter;
     public float moveSpeed = 3f;
 
 
@@ -47,6 +48,7 @@ public class TrashMonster : MonoBehaviour
         attackCooldownTimer = attackCooldown;
         damageCooldownTimer = damageCooldown;
         stunCooldownTimer = stunCooldown;
+        aiDestinationSetter = GetComponent<AIDestinationSetter>();
     }
 
     void Update()
@@ -66,7 +68,7 @@ public class TrashMonster : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        if (canAttack == true)
+        if (canAttack == true && canMove)
         {
             Attack();
         }
@@ -90,10 +92,6 @@ public class TrashMonster : MonoBehaviour
     { 
         anim.SetTrigger("Dead");
         canMove = false;
-        foreach(Component component in components)
-        {
-            component.gameObject.SetActive(false);
-        }
     }
 
     public void TakeDamage(int damage)

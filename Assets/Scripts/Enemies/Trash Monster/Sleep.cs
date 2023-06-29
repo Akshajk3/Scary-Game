@@ -13,10 +13,12 @@ public class Sleep : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        GameObject player = collision.gameObject;
+        if(player.tag == "Player")
         {
             trashMonster.sleeping = false;
             trashMonster.canMove = true;
+            trashMonster.aiDestinationSetter.target = player.transform;
         }
     }
 }

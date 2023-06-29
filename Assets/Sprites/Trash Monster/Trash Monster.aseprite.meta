@@ -1,7 +1,1060 @@
 fileFormatVersion: 2
 guid: 829fe74b02d5c734b8b46fa4db05532c
-DefaultImporter:
+ScriptedImporter:
+  internalIDToNameTable: []
   externalObjects: {}
+  serializedVersion: 2
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Trash Monster_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.44117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 426
+      width: 46
+      height: 34
+    spriteID: 93e37e052b19a414f89b5619b92b7943
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 426}
+  - name: Trash Monster_Frame_1
+    originalName: 
+    pivot: {x: 0.43137255, y: -0.43243244}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 467
+      width: 51
+      height: 37
+    spriteID: 9c137455985ca44c0a0cebd2f7b10e53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 467}
+  - name: Trash Monster_Frame_2
+    originalName: 
+    pivot: {x: 0.46296296, y: -0.41463414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 113
+      width: 54
+      height: 41
+    spriteID: e2a21bad68bc147509402d660b90d85e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 113}
+  - name: Trash Monster_Frame_3
+    originalName: 
+    pivot: {x: 0.6086957, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 97
+      width: 46
+      height: 40
+    spriteID: c677cbcc7e98d40dea414a6e7895e24a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 97}
+  - name: Trash Monster_Frame_4
+    originalName: 
+    pivot: {x: 0.59574467, y: -0.35714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 368
+      width: 47
+      height: 42
+    spriteID: f71f9d0bd899c48c6a20407e10257a8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 368}
+  - name: Trash Monster_Frame_5
+    originalName: 
+    pivot: {x: 0.6086957, y: -0.3846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 289
+      width: 46
+      height: 39
+    spriteID: 959759f286d0045bbb4eab2be66af27f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 289}
+  - name: Trash Monster_Frame_6
+    originalName: 
+    pivot: {x: 0.48076925, y: -0.625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 182
+      width: 52
+      height: 24
+    spriteID: 915478819b1fd4a44a6c2109e311f96b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 182}
+  - name: Trash Monster_Frame_7
+    originalName: 
+    pivot: {x: 0.48076925, y: -0.59999996}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 149
+      width: 52
+      height: 25
+    spriteID: 01ea1190d028849ec8f4bfaaccd43bc2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 149}
+  - name: Trash Monster_Frame_8
+    originalName: 
+    pivot: {x: 0.48076925, y: -0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 4
+      width: 52
+      height: 30
+    spriteID: 89c87add3ba79448c956e68b4084cf43
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 4}
+  - name: Trash Monster_Frame_9
+    originalName: 
+    pivot: {x: 0.48076925, y: -0.5357143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 42
+      width: 52
+      height: 28
+    spriteID: 91575c07908554a5787123b1bb4a8140
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 42}
+  - name: Trash Monster_Frame_10
+    originalName: 
+    pivot: {x: 0.48076925, y: -0.5555556}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 114
+      width: 52
+      height: 27
+    spriteID: 67c328cec29d949e5a9004e8d7d300f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 114}
+  - name: Trash Monster_Frame_11
+    originalName: 
+    pivot: {x: 0.48076925, y: -0.5357143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 78
+      width: 52
+      height: 28
+    spriteID: 20b3e86e8f6894c71a787aff024cd706
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 78}
+  - name: Trash Monster_Frame_12
+    originalName: 
+    pivot: {x: 0.43137255, y: -0.43243244}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 4
+      width: 51
+      height: 37
+    spriteID: 016b674f76aac443cba628bde6559a17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 4}
+  - name: Trash Monster_Frame_13
+    originalName: 
+    pivot: {x: 0.36956522, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 145
+      width: 46
+      height: 40
+    spriteID: b26322830d27d44ac9e4e16e229a4fd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 145}
+  - name: Trash Monster_Frame_14
+    originalName: 
+    pivot: {x: 0.36956522, y: -0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 193
+      width: 46
+      height: 40
+    spriteID: 17654883fa09c4bbb8a797ad51854d8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 193}
+  - name: Trash Monster_Frame_15
+    originalName: 
+    pivot: {x: 0.36956522, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 336
+      width: 46
+      height: 38
+    spriteID: 9004792a35f854b68975225690c9b5ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 336}
+  - name: Trash Monster_Frame_16
+    originalName: 
+    pivot: {x: 0.3829787, y: -0.44444445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 382
+      width: 47
+      height: 36
+    spriteID: 45f6e936bce414156b0559def010c2a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 382}
+  - name: Trash Monster_Frame_17
+    originalName: 
+    pivot: {x: 0.4255319, y: -0.60714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 468
+      width: 47
+      height: 28
+    spriteID: a5edb04caaf544d16a152a698e458a1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 468}
+  - name: Trash Monster_Frame_18
+    originalName: 
+    pivot: {x: 0.38636366, y: -0.61538464}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 214
+      width: 44
+      height: 26
+    spriteID: 01dec384821eb4ff48a128c0768a09f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 214}
+  - name: Trash Monster_Frame_19
+    originalName: 
+    pivot: {x: 0.4, y: -0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 248
+      width: 45
+      height: 20
+    spriteID: 14020b7ce45014224bb5690c76fe21de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 248}
+  - name: Trash Monster_Frame_20
+    originalName: 
+    pivot: {x: 0.39130434, y: -1.3636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 314
+      width: 46
+      height: 11
+    spriteID: ac69b09b8d70546a59986fe3db05f89d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 314}
+  - name: Trash Monster_Frame_21
+    originalName: 
+    pivot: {x: 0.42857143, y: -1.2727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 276
+      width: 49
+      height: 11
+    spriteID: 17634aa625574495282efbe7577223ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 276}
+  - name: Trash Monster_Frame_22
+    originalName: 
+    pivot: {x: 0.42857143, y: -1.2727273}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 183
+      y: 295
+      width: 49
+      height: 11
+    spriteID: 469f0c1bba9314249af126b179783de2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 183, y: 295}
+  - name: Trash Monster_Frame_23
+    originalName: 
+    pivot: {x: 0.43137255, y: -0.3902439}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 319
+      width: 51
+      height: 41
+    spriteID: 10d5382be7fe446a0a0dbdbbeb1e0d5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 319}
+  - name: Trash Monster_Frame_24
+    originalName: 
+    pivot: {x: 0.39583334, y: -0.41463414}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 418
+      width: 48
+      height: 41
+    spriteID: 94d57847729e64219aaa20c8be5fc62f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 418}
+  - name: Trash Monster_Frame_25
+    originalName: 
+    pivot: {x: 0.3617021, y: -0.425}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 49
+      width: 47
+      height: 40
+    spriteID: b55e344846b4141cd86baf44140e5f92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 49}
+  - name: Trash Monster_Frame_26
+    originalName: 
+    pivot: {x: 0.45614034, y: -0.39534885}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 62
+      width: 57
+      height: 43
+    spriteID: c4287607add734bd3afb31aeafb1e9d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 62}
+  - name: Trash Monster_Frame_27
+    originalName: 
+    pivot: {x: 0.5416667, y: -0.38636366}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 267
+      width: 48
+      height: 44
+    spriteID: 92d48968997fe435886cdf1598afd6f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 267}
+  - name: Trash Monster_Frame_28
+    originalName: 
+    pivot: {x: 0.56, y: -0.3488372}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 216
+      width: 50
+      height: 43
+    spriteID: b4944ad3a4105450eaa967f8b6945b74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 216}
+  - name: Trash Monster_Frame_29
+    originalName: 
+    pivot: {x: 0.4827586, y: -0.17999999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 58
+      height: 50
+    spriteID: eb16ddd49ded644999a82b616d8356d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Trash Monster_Frame_30
+    originalName: 
+    pivot: {x: 0.3829787, y: -0.32608697}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 162
+      width: 47
+      height: 46
+    spriteID: 28adb6c8c86874e1cb5f1fa3504f9176
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 162}
+  - name: Trash Monster_Frame_31
+    originalName: 
+    pivot: {x: 0.3478261, y: -0.35714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 4
+      width: 46
+      height: 42
+    spriteID: e225679890d9a447c81cc4329b2cfc4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 4}
+  - name: Trash Monster_Frame_32
+    originalName: 
+    pivot: {x: 0.32608697, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 241
+      width: 46
+      height: 40
+    spriteID: b51843672d2314f2aadc03ef5a3319c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 241}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 718129174
+    name: Trash Monster
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Trash Monster_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 9
+        y: 15
+        width: 46
+        height: 34
+      spriteId: 93e37e052b19a414f89b5619b92b7943
+    - name: Trash Monster_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 10
+        y: 16
+        width: 51
+        height: 37
+      spriteId: 9c137455985ca44c0a0cebd2f7b10e53
+    - name: Trash Monster_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 7
+        y: 17
+        width: 54
+        height: 41
+      spriteId: e2a21bad68bc147509402d660b90d85e
+    - name: Trash Monster_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 4
+        y: 20
+        width: 46
+        height: 40
+      spriteId: c677cbcc7e98d40dea414a6e7895e24a
+    - name: Trash Monster_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 4
+        y: 15
+        width: 47
+        height: 42
+      spriteId: f71f9d0bd899c48c6a20407e10257a8c
+    - name: Trash Monster_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 4
+        y: 15
+        width: 46
+        height: 39
+      spriteId: 959759f286d0045bbb4eab2be66af27f
+    - name: Trash Monster_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 7
+        y: 15
+        width: 52
+        height: 24
+      spriteId: 915478819b1fd4a44a6c2109e311f96b
+    - name: Trash Monster_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 7
+        y: 15
+        width: 52
+        height: 25
+      spriteId: 01ea1190d028849ec8f4bfaaccd43bc2
+    - name: Trash Monster_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 7
+        y: 15
+        width: 52
+        height: 30
+      spriteId: 89c87add3ba79448c956e68b4084cf43
+    - name: Trash Monster_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 7
+        y: 15
+        width: 52
+        height: 28
+      spriteId: 91575c07908554a5787123b1bb4a8140
+    - name: Trash Monster_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 7
+        y: 15
+        width: 52
+        height: 27
+      spriteId: 67c328cec29d949e5a9004e8d7d300f4
+    - name: Trash Monster_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 7
+        y: 15
+        width: 52
+        height: 28
+      spriteId: 20b3e86e8f6894c71a787aff024cd706
+    - name: Trash Monster_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 10
+        y: 16
+        width: 51
+        height: 37
+      spriteId: 016b674f76aac443cba628bde6559a17
+    - name: Trash Monster_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 15
+        y: 16
+        width: 46
+        height: 40
+      spriteId: b26322830d27d44ac9e4e16e229a4fd9
+    - name: Trash Monster_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 15
+        y: 16
+        width: 46
+        height: 40
+      spriteId: 17654883fa09c4bbb8a797ad51854d8e
+    - name: Trash Monster_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 15
+        y: 16
+        width: 46
+        height: 38
+      spriteId: 9004792a35f854b68975225690c9b5ba
+    - name: Trash Monster_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 14
+        y: 16
+        width: 47
+        height: 36
+      spriteId: 45f6e936bce414156b0559def010c2a6
+    - name: Trash Monster_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 12
+        y: 17
+        width: 47
+        height: 28
+      spriteId: a5edb04caaf544d16a152a698e458a1a
+    - name: Trash Monster_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 15
+        y: 16
+        width: 44
+        height: 26
+      spriteId: 01dec384821eb4ff48a128c0768a09f8
+    - name: Trash Monster_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 14
+        y: 15
+        width: 45
+        height: 20
+      spriteId: 14020b7ce45014224bb5690c76fe21de
+    - name: Trash Monster_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 14
+        y: 15
+        width: 46
+        height: 11
+      spriteId: ac69b09b8d70546a59986fe3db05f89d
+    - name: Trash Monster_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 11
+        y: 14
+        width: 49
+        height: 11
+      spriteId: 17634aa625574495282efbe7577223ad
+    - name: Trash Monster_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 11
+        y: 14
+        width: 49
+        height: 11
+      spriteId: 469f0c1bba9314249af126b179783de2
+    - name: Trash Monster_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 10
+        y: 16
+        width: 51
+        height: 41
+      spriteId: 10d5382be7fe446a0a0dbdbbeb1e0d5c
+    - name: Trash Monster_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 13
+        y: 17
+        width: 48
+        height: 41
+      spriteId: 94d57847729e64219aaa20c8be5fc62f
+    - name: Trash Monster_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 15
+        y: 17
+        width: 47
+        height: 40
+      spriteId: b55e344846b4141cd86baf44140e5f92
+    - name: Trash Monster_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 6
+        y: 17
+        width: 57
+        height: 43
+      spriteId: c4287607add734bd3afb31aeafb1e9d7
+    - name: Trash Monster_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 6
+        y: 17
+        width: 48
+        height: 44
+      spriteId: 92d48968997fe435886cdf1598afd6f4
+    - name: Trash Monster_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 4
+        y: 15
+        width: 50
+        height: 43
+      spriteId: b4944ad3a4105450eaa967f8b6945b74
+    - name: Trash Monster_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 4
+        y: 9
+        width: 58
+        height: 50
+      spriteId: eb16ddd49ded644999a82b616d8356d2
+    - name: Trash Monster_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 14
+        y: 15
+        width: 47
+        height: 46
+      spriteId: 28adb6c8c86874e1cb5f1fa3504f9176
+    - name: Trash Monster_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 16
+        y: 15
+        width: 46
+        height: 42
+      spriteId: e225679890d9a447c81cc4329b2cfc4a
+    - name: Trash Monster_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 17
+        y: 15
+        width: 46
+        height: 40
+      spriteId: b51843672d2314f2aadc03ef5a3319c4
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
